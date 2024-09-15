@@ -1,0 +1,102 @@
+{% extends "interview/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<div class="container home">
+  <h1>Welcome to Interview Tracker</h1>
+  <h3 class="h3titles">Total Interviews: {{ interview_count }}</h3>
+
+    <div class="row mt-2">
+        <div class="col-md-2">
+            <div class="list-group">
+                <a href="{% url 'interview:create_interview' %}" class="btn btn-success">Add Interview</a>
+                <a href="{% url 'interview:interview_list' %}?action=update" class="btn btn-primary">Update Interview</a>
+                <a href="{% url 'interview:interview_list' %}?action=delete" class="btn btn-danger">Delete Interview</a>
+                <a href="{% url 'interview:interview_list' %}?action=list" class="btn btn-info">Interview List</a>
+            </div>
+        </div>
+
+        <div class="col-md-10">
+            <canvas id="myChart"></canvas>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <div class="chartype">
+                <label for="chartType">Choose chart type:</label>
+                <select id="chartType" onchange="changeChartType()">
+                    <option value="line">Line Chart</option>
+                    <option value="bar">Bar Chart</option>
+                </select>
+            </div>
+            
+            <script>
+                let chartType = 'line'; 
+                const ctx = document.getElementById('myChart').getContext('2d');
+                let data = {
+                    labels: [{% for interview in interviews %}'{{ interview.date }}',{% endfor %}],
+                    datasets: [{
+                        label: 'Grades of interviews',
+                        data: [{% for interview in interviews %}{ x: '{{ interview.date }}', y: {{ interview.total_grade }}, company: '{{ interview.company_name }}' },{% endfor %}],
+                        borderWidth: 3,
+                        backgroundColor: 'rgba(0, 123, 255, 0.2)', 
+                        borderColor: 'rgba(0, 123, 255, 1)', 
+                        pointBackgroundColor: 'rgba(0, 123, 255, 1)', 
+                        pointBorderColor: 'rgba(0, 123, 255, 1)' 
+                    }]
+                };
+        
+                let chartOptions = {
+                    scales: {
+                        x: {
+                            type: 'category',
+                            position: 'bottom',
+                            offset: true, 
+                            barPercentage: 0.9, 
+                            categoryPercentage: 0.8 
+                        },
+                        y: {
+                            beginAtZero: true,
+                            min: 0,
+                            max: 10
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    label += context.raw.y;
+                                    if (context.raw.company) {
+                                        label += ` (Company: ${context.raw.company})`;
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                };
+        
+                let chart = new Chart(ctx, {
+                    type: chartType,
+                    data: data,
+                    options: chartOptions
+                });
+        
+                function changeChartType() {
+                    const selectedType = document.getElementById('chartType').value;
+                    chart.destroy(); 
+        
+                    chart = new Chart(ctx, {
+                        type: selectedType,
+                        data: data,
+                        options: chartOptions
+                    });
+                }
+            </script>
+        </div>  
+    </div>
+</div>
+{% endblock %}

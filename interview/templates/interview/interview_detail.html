@@ -1,0 +1,23 @@
+{% extends "interview/base.html" %}
+
+{% block content %}
+
+
+    <h1>Interview Details</h1>
+    <div class="interview-details">
+        <h2>Position: {{ interview.position }}</h2>
+        <p><strong>Candidate:</strong> {{ interview.user }}</p>
+        <p><strong>Date:</strong> {{ interview.date }}</p>
+        <p><strong>Company Name:</strong> {{ interview.company_name }}</p>
+        <p><strong>Total Grade:</strong> {{ interview.total_grade }}</p>
+        <p><strong>Notes:</strong> {{ interview.notes }}</p>
+    </div>
+    <a id="updateButton" class="btn btn-primary" href="{% url 'interview:update_interview' interview.pk %}">Update Interview</a>
+    <hr>
+    <a type="submit" href="{% url 'interview:interview_list' %}" class="btn btn-info" id="backmenu">Back to Interview List</a>
+
+
+
+
+ 
+{% endblock %}

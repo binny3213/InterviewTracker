@@ -1,0 +1,27 @@
+{% extends "interview/base.html" %}
+
+{% block content %}
+<div class="">
+    <h2>Please Sign up:</h2>
+
+    <form action="{% url 'interview:signup' %}" method="POST">
+        {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-primary" value="Sign In">
+            <input type="hidden" name="next" value="{{next}}">
+    </form>
+    {% if form.errors %}
+    <div class="alert alert-danger">
+      <ul>
+        {% for field in form %}
+          {% for error in field.errors %}
+            <li>{{ error }}</li>
+          {% endfor %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+</div>
+
+{% endblock %}

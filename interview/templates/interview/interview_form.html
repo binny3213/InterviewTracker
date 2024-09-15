@@ -1,0 +1,18 @@
+{% extends 'interview/base.html' %}
+
+{% block title %}Interview Form{% endblock %}
+
+{% block content %}
+<div class="form-container">
+    <h2>{{ form.instance.pk|yesno:"Update Interview,Add Interview" }}</h2>
+    <p>Rank the interview skills from 0-10 according to feedback or personal feelings.
+         Try to be objective as much as possible - remmember this is a learning process.
+         <span>😊</span></p>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a href="{% url 'interview:interview_list' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}
