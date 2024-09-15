@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
-import django_heroku
-import dj_database_url
 
 
 
@@ -31,7 +29,7 @@ SECRET_KEY = "django-insecure-so@=c_^@7uc47f3*6^cf=n6io1z-zupcn6im@rg&%1@^by7=%#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -129,9 +127,8 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
-STATICFILES_DIRS = (os.path.join(BaseException,'static'),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR,'interview/static'),)
 
-django_heroku.settings(locals())
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'

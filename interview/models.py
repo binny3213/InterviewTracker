@@ -8,7 +8,7 @@ class Interview(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     company_name = models.CharField(max_length=100)
     position = models.CharField(max_length=100)
-    date = models.DateField(default=timezone.now())
+    date = models.DateField(default=timezone.now)
     code_skills = models.IntegerField(null=False, blank=False)
     project_presentation = models.IntegerField(null=False, blank=False)
     knowledge = models.IntegerField(null=False, blank=False)
