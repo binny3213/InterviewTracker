@@ -93,7 +93,8 @@ I integrated SQLite as the database for my project. Its lightweight nature and s
 To add interactivity to my web pages, I incorporated JavaScript. This allowed me to manipulate the Document Object Model (DOM) and create dynamic content that responds to user actions, making the application more engaging and user-friendly.
 <hr>
 
-![image](https://github.com/user-attachments/assets/7c66f47c-3f2c-42d7-bb91-e88cabd7d11e)
+![image](https://github.com/user-attachments/assets/3c522a1d-2eca-47e6-9c69-e97e7455f7f1)
+
 
  <br>
 For data visualization, I utilized Chart.js, a powerful JavaScript library. By integrating Chart.js, I was able to present data in an interactive and visually appealing manner, helping users to easily understand and analyze the information provided by the application.
