@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/1420b750-fad1-48f0-9d9f-9da305d1df2f)
+![Screenshot 2024-09-15 111551](https://github.com/user-attachments/assets/c2ad48ea-25a0-4f57-8e66-38f94cbe9aec)
+
 
 <h1>Welcome to Interview Tracker – your ultimate companion in the job search journey.</h1>
 <hr>
