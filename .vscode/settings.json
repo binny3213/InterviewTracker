@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "C:/Users/binny/anaconda3/envs/MyDjangoEnv/Lib/site-packages"
+]
+}
