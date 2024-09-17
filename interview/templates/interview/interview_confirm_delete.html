@@ -1,0 +1,15 @@
+{% extends 'interview/base.html' %}
+
+{% block title %}Confirm Delete{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Are you sure you want to delete this interview?</h2>
+    <p>{{ object.company_name }} - {{ object.position }} on {{ object.date }}</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Yes, delete</button>
+        <a href="{% url 'interview:interview_list' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}

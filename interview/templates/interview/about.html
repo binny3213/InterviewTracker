@@ -1,0 +1,64 @@
+{% extends "interview/base.html" %}
+
+{% block content %}
+
+
+     <h1>About Page</h1> 
+          <h3>Welcome to <span style="color:#007bff;">Interview Tracker</span> – your ultimate companion in the job search journey</h3>
+          <hr>
+     <h6>
+          This web app is designed to help you stay organized, motivated, and confident as
+          you navigate the challenging path to landing your dream job.
+     </h6>
+
+   
+
+     <h3>Features:</h3>
+     <p>
+          At Interview Tracker, i empower job seekers by providing a comprehensive platform to:
+     </p>
+     <ul>
+          <li>
+               <h4><img src="https://img.icons8.com/?size=100&id=24875&format=png&color=000000" alt="https://icons8.com/icon/24875/track-order"> Track Your Interview Journey</h4> 
+               
+
+               <p>Keep a detailed record of all your interviews, including dates, companies, positions, and outcomes.</p>
+          </li>
+          <li>
+               <h4><i style="font-size:24px" class="fa">&#xf201;</i>  Monitor Your Progress</h4> 
+               <p>Visualize your progress over time with insightful charts and graphs that show your improvement and milestones.</p>
+          </li>
+          <li>
+               <h4><img src="https://img.icons8.com/?size=100&id=zFzvGdZrARYG&format=png&color=000000" alt="https://icons8.com/icon/zFzvGdZrARYG/check-box-with-check"> Evaluate Your Performance</h4>
+               <p>Access grades and feedback from past interviews to identify strengths and areas for improvement.
+                  It should be objectively beacuse we d'ont always get feedback from the hiring team.  
+
+          </li>
+          <li>
+               <h4><img src="https://img.icons8.com/?size=100&id=60985&format=png&color=000000" alt="https://icons8.com/icon/60985/fire"> Stay Motivated</h4>
+               <p>Stayed reminded that highlight your growth and keep you motivated, especially during tough times.
+                  I'ts also much more fun this way , rather than keeping all your list in a boring excel page.  
+               </p>
+          </li>   
+          <li>
+               <h4><img src="https://img.icons8.com/?size=100&id=HshIQgiZ35nI&format=png&color=000000" alt="https://icons8.com/icon/HshIQgiZ35nI/goal">  My mission</h4>
+          <p>
+               I understand that the job search process can be long and discouraging, especially for those aiming for positions in tech companies.
+               my mission is to provide you with the tools and support you need to stay positive and persistent.
+               By offering a clear perspective on your journey, I help you see that every step forward is a step closer to success.
+          </p>
+          </li>
+          
+     </ul>
+
+     <h4>Start by adding interviews:</h4>
+     <a href="{% url 'interview:create_interview' %}" style="margin-right:5px" class="btn btn-success">Add Interview</a>
+     <a title="home" class="btn btn-info" href="{% url 'interview:home' %}">Home Page</a>
+
+
+
+
+
+
+
+{% endblock %}
