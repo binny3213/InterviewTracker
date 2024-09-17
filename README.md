@@ -9,21 +9,24 @@ At Interview Tracker, i empower job seekers by providing a comprehensive platfor
 
 <h4>Track Your Interview Journey:</h4> 
 
-![image](https://github.com/user-attachments/assets/00e84277-e4bf-4200-9141-700b83714ede)
+![image](https://github.com/user-attachments/assets/05c2bf59-3aba-4944-9c93-3e9fc2b69eb4)
+
 
 
 Keep a detailed record of all your interviews, including dates, companies, positions, and outcomes.  
 
 <h4>Monitor Your Progress:</h4>
 
-![image](https://github.com/user-attachments/assets/cdbaec74-aa14-47e9-b526-f883e933f429)
+![image](https://github.com/user-attachments/assets/0be7e4ea-ae91-4cac-84e5-2c407d47bb34)
+
 
 
 Visualize your progress over time with insightful charts and graphs that show your improvement and milestones.
 
 <h4>Evaluate Your Performance:</h4>
 
-![image](https://github.com/user-attachments/assets/33d35cf9-9b6f-4a03-93a8-76c291352991)
+![image](https://github.com/user-attachments/assets/88484e6e-fc6a-4923-b65c-35c4fcb01694)
+
 
 
 Access grades and feedback from past interviews to identify strengths and areas for improvement.
@@ -31,7 +34,8 @@ It should be objectively beacuse we d'ont always get feedback from the hiring te
 
 <h4>Stay Motivated:</h4>
 
-![image](https://github.com/user-attachments/assets/d647dc7e-a332-4831-bf08-936f3528131e)
+![image](https://github.com/user-attachments/assets/8528dbff-a522-4d67-b703-250eeca766fc)
+
 
 
 Stayed reminded that highlight your growth and keep you motivated, especially during tough times.
