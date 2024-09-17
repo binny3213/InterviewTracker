@@ -45,7 +45,8 @@ I'ts also much more fun this way , rather than keeping all your list in a boring
 
 <h4>My mission:</h4>
 
-![image](https://github.com/user-attachments/assets/3226fd46-91e9-435f-ab67-d19509eaef5c)
+![image](https://github.com/user-attachments/assets/f9833ae7-add9-41b0-a2a5-ae1b9eda8c18)
+
 
 
 I understand that the job search process can be long and discouraging, especially for those aiming for positions in tech companies.
