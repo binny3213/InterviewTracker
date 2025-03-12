@@ -66,7 +66,7 @@ Check the app ant let me know what you think.
           <img src="https://github.com/devicons/devicon/blob/master/icons/sqlite/sqlite-original-wordmark.svg" title="sqlite" **alt="sqlite" width="40" height="40"/>
 </div>     
 
-### Description:
+### Description 📝:
 I successfully developed a fully functional web application that serves a meaningful purpose and provides valuable resources to its users. Here’s how I utilized various tools and technologies to achieve this:
 <hr>
 <div><img src="https://github.com/devicons/devicon/blob/master/icons/django/django-plain.svg" title="Django" **alt="Django" width="40" height="40"/>  Django: </div>
@@ -103,6 +103,6 @@ For data visualization, I utilized Chart.js, a powerful JavaScript library. By i
 Through the combination of these tools and technologies, I was able to create a web application that not only serves a great purpose but also provides a seamless and enriching experience for its users. The project showcases my ability to integrate various technologies and deliver a high-quality, functional product.
 <hr>
 
-Video Description of the Web App: 
+### Video Description of the Web App 🎥: 
 
 https://www.loom.com/share/3620361713f7429180c94818114bfacc
